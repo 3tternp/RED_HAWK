@@ -1,4 +1,4 @@
-FROM php:latest
+FROM php:8.5.3RC1-trixie
 RUN apt-get update && apt-get install -y git
 RUN git clone https://github.com/Tuhinshubhra/RED_HAWK && cp -r RED_HAWK /usr/src/redhawk
 WORKDIR /usr/src/redhawk
